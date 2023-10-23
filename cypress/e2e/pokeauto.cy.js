@@ -1,12 +1,12 @@
-import home from '../selectors/home.css'
+import pokeauto from '../selectors/pokeauto.css'
 
 describe('Home page', () => {
-    it('contains correct elements when logged out', () => {
+    it('Pokedex Automation', () => {
         cy.visit('')
-        cy.get(home.pokedex).click()
-        cy.get(home.cookies).click()
-        cy.get(home.searchpoke).type("pikachu")
-        cy.get(home.buttonsearch).click()
+        cy.get(pokeauto.pokedex).click()
+        cy.get(pokeauto.cookies).click()
+        cy.get(pokeauto.searchpoke).type("pikachu")
+        cy.get(pokeauto.buttonsearch).click()
         cy.get('[src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"]').click()
         cy.scrollTo(0,1200)
         cy.get('[href="/us/pokedex/"]').last().click()
