@@ -26,6 +26,6 @@ module.exports = defineConfig({
         setupNodeEvents: function (on, config) {
             return require('./cypress/plugins/index.js')(on, config)
         },
-        baseUrl: 'http://angularjs.realworld.io/#'
+        baseUrl: 'https://www.pokemon.com/us/'
     }
 })
