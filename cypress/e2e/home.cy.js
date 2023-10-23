@@ -11,7 +11,7 @@ describe('Home page', () => {
             .and('have.length.at.least', 2)
         cy.get(home.sidebar).should('be.visible')
         cy.get(home.sidebarTags).should('be.visible')
-            .and('have.length.at.least', 3)
+            .and('have.length.at.least', 4)
     })
 
     it('contains correct elements when logged in', () => {
