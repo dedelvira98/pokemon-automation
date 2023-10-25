@@ -8,6 +8,7 @@ describe('Home page', () => {
         cy.get(pokeauto.searchpoke).type("pikachu")
         cy.get(pokeauto.buttonsearch).click()
         cy.get('[src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"]').click()
+        cy.scrollTo(0,600)
         cy.scrollTo(0,1200)
         cy.get('[href="/us/pokedex/"]').last().click()
         cy.scrollTo('bottom')
